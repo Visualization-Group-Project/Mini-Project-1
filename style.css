@@ -2,15 +2,15 @@ body {
   background-color: rgb(244, 243, 244);
 }
 
-.container {
+.main-container {
   width: 80%;
+  margin: auto;
   text-align: center;
 }
 
 #header {
   margin: auto;
   width: 100%;
-  /* border: 3px solid green; */
   padding: 10px;
   text-align: center;
 }
@@ -19,7 +19,6 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  /* padding: 10px; */
 }
 
 .column {
@@ -27,9 +26,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-basis: 100%;
-  flex: 1;
-  margin: 1px;
+  color: black:
 }
 
 .button-container {
@@ -37,9 +34,30 @@ body {
   justify-content: flex-end;
 }
 
+.content-container {
+  border: 1px solid black;
+  /* border-radius: 4px; */
+}
+
+.case-container {
+  margin: 50px;
+  border: 1px solid red;
+  /* padding: 50px; */
+}
+
+button {
+  color: black;
+}
+
 .button {
   color: black;
   border-color: black;
+  font-size: large;
+}
+
+.button.button-clear{
+    color: black;
+    font-size: large;
 }
 
 .button:hover {
@@ -51,4 +69,34 @@ img {
   max-width: 100%;
   min-width: 420px;
   max-height: 420px;
+}
+
+.question {
+  font-weight: bold;
+}
+
+span {
+
+  background: linear-gradient(to bottom, #89d6e4 0%, #89d6e4 100%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 100% 2px;
+  color: #000;
+  transition: background-size 0.2s;
+}
+
+span :hover {
+  background-size: 100% 100%;
+}
+
+span {
+    background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #ddd 50%);
+    background-position: -0% 0;
+    background-size: 200% auto;
+    color: #222;
+    transition: background-position 0.5s ease-out;
+}
+
+span:hover {
+    background-position: -99.99% 0;
 }
