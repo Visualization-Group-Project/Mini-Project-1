@@ -1,11 +1,11 @@
 let questions = [
-  'Who is the audience?',
-  'What message and questions does this visualization convey and answer?',
-  'What data is encoded in the visualization?',
-  'How does the visualiztion encode the data?',
-  'What tasks readers perform on the visualization (e.g., identify extremes, compare values, seeing trends) ?',
-  'How are the five principles (i.e., truthful, functional, beautiful, insightful, enlightening) applied to this visualization?',
-  'Considering all aspects, why is this visualization good or bad?',
+  '1. Who is the audience?',
+  '2. What message and questions does this visualization convey and answer?',
+  '3. What data is encoded in the visualization?',
+  '4. How does the visualiztion encode the data?',
+  '5. What tasks readers perform on the visualization (e.g., identify extremes, compare values, seeing trends) ?',
+  '6. How are the five principles (i.e., truthful, functional, beautiful, insightful, enlightening) applied to this visualization?',
+  '7. Considering all aspects, why is this visualization good or bad?',
 ];
 
 let goodFacts1 = [

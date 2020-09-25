@@ -3,7 +3,7 @@ body {
 }
 
 .main-container {
-  width: 80%;
+  width: 90%;
   margin: auto;
   text-align: center;
 }
@@ -45,15 +45,6 @@ body {
   /* padding: 50px; */
 }
 
-button {
-  color: black;
-}
-
-.button {
-  color: black;
-  border-color: black;
-  font-size: large;
-}
 
 .button.button-clear{
     color: black;
@@ -99,4 +90,12 @@ span {
 
 span:hover {
     background-position: -99.99% 0;
+}
+
+.redesign-critique{
+    text-align: justify;
+}
+
+li{
+    text-align: justify;
 }
