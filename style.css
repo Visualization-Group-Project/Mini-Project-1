@@ -1,6 +1,7 @@
 body {
   background-color: F8F9FA;
 }
+
 .container {
   width: 80%;
   text-align: center;
@@ -22,9 +23,11 @@ body {
 .column {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   flex-basis: 100%;
   flex: 1;
   background-color: gray;
   margin: 1px;
   color: white;
 }
+
