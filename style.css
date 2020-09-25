@@ -1,14 +1,15 @@
 body {
-  background-color: beige;
+  background-color: F8F9FA;
 }
 .container {
   width: 80%;
+  text-align: center;
 }
 
 #header {
   margin: auto;
   width: 100%;
-  border: 3px solid green;
+  /* border: 3px solid green; */
   padding: 10px;
   text-align: center;
 }
