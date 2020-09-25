@@ -26,11 +26,16 @@
     <link rel="stylesheet" href="style.css" />
 
     <title>Mini Project 1</title>
+
+    <script defer src="js/first.js"></script>
+    <script defer src="js/second.js"></script>
+    <script defer src="js/third.js"></script>
   </head>
   <body>
     <div class="container">
       <div id="header">
         <img src="assets/Intro-img.jpeg" />
+
         <h1>Mini Project 1</h1>
         <h2>Mooyeong Lee, Jane Ga Young Lee, Sung Joon Park</h2>
       </div>
@@ -41,56 +46,35 @@
         <div class="column">
           <img src="assets/Jane/jane_goodvis.png" class="center" />
         </div>
-        <div class="column">
-          <ul>
-            <li>
-              This visualization is for those interested in comparing the
-              different disease deaths worldwide
-            </li>
-            <li>
-              This visualization is trying to show the seriousness of the
-              coronavirus outbreak
-            </li>
-            <li>
-              The data being encoded in this visualization is the average
-              disease deaths per day worldwide by different pandemics and
-              endemics
-            </li>
-            <li>
-              The data is encoded as a horizontal bar chart with its x-axis
-              representing the number of average disease deaths and y-axis
-              representing the type of disease. The seriousness of COVID-19 is
-              emphasized through being highlighted in a different color
-            </li>
-            <li>
-              The reader is tasked with comparing the values of the total deaths
-              and identifying the upper extreme
-            </li>
-            <li>
-              This visualization is particularly insightful and enlightening
-              with its use of color and the clear format of the bar chart. The
-              bars are colored in blue except for COVID-19, allowing the
-              audience to easily notice that the average disease deaths for the
-              coronavirus is the highest. The bars are also sorted in the order
-              of highest to lowest number of deaths, displaying the most
-              important information on the top. To help with further comparison,
-              each type of disease is categorized into either “pandemic” or
-              “endemic” with different colors. It is also truthful since the
-              scaling is also to standard with the numbers labeled at the tip of
-              each bar for clarity. This visualization certainly helps the
-              audience interpret visualization correctly, making it functional
-              as well. It is fairly average in terms of beauty
-            </li>
-            <li>
-              Considering all aspects, this visualization is good because it is
-              very approachable and easy to understand. It has great
-              quantitative measures and a clear comparison that the audience can
-              see and figure out what is important. The use of colors are very
-              effective and practical as well.
-            </li>
-          </ul>
+        <div class="column" id="content">
+          <li id="good-1">
+            This visualization is for those interested in comparing the
+            different disease deaths worldwide
+          </li>
         </div>
       </div>
+
+      <div class="row">
+        <button
+          type="button"
+          id="good-backward-1"
+          class="button column column-25 column-offset-50"
+        >
+          BACKWARD
+        </button>
+        <button
+          type="button"
+          id="good-forward-1"
+          class="button column column-25"
+        >
+          FORWARD
+        </button>
+      </div>
+      <a
+        href="https://informationisbeautiful.net/visualizations/covid-19-coronavirus-infographic-datapack/"
+        target="_blank"
+        >Average Disease Deaths per Day Worldwide</a
+      >
 
       <h3>Bad Visualization 1</h3>
       <div class="row">
@@ -98,51 +82,32 @@
           <img src="assets/Jane/jane_badvis.png" />
         </div>
         <div class="column">
-          <li>
+          <li id="bad-1">
             This visualization is for the readers of technical papers who are
             interested in the changing data on email usages
           </li>
-          <li>
-            This plot is trying to convey that email traffic is steeply on the
-            rise
-          </li>
-          <li>
-            The data being encoded in this visualization is the total worldwide
-            emails being used per day, in billions, through 2017 to 2021
-          </li>
-          <li>
-            The data is represented through a barchart. The x-axis represents
-            years and the y-axis shows the total worldwide emails (billions).
-            The bars have different colors that illustrate respective years
-          </li>
-          <li>
-            The reader is tasked with identifying the different number of total
-            emails for the years shown, recognizing the trend by comparing those
-            numbers
-          </li>
-          <li>
-            Although unnecessary, this visualization can be seen as beautiful
-            with a pleasing combination of colors. However, it fails to apply
-            the other four principles. The plot unfairly represents the data:
-            the y-axis does not start at 0 but starts at a very large value of
-            225 billion instead. In addition, the time range is very narrow and
-            includes years that need prediction of the future, not using data
-            that is collected. The form of the barchart also has needless
-            features such as 3D and the shadows. Thus this visualization does
-            not have the qualities of being truthful, functional, insightful,
-            and enlightening
-          </li>
-          <li>
-            Considering all aspects, this visualization is bad because it can be
-            misleading to its audience. It not only has unnecessary design
-            features, but also misrepresents the data. The bar chart shows a
-            trend with some predictions of the future that could not necessarily
-            be accurate information, and has incorrect scaling that makes the
-            chart seem like email traffic has doubled when it only went by a
-            small fraction in truth.
-          </li>
         </div>
       </div>
+
+      <div class="row">
+        <button
+          type="button"
+          id="bad-backward-1"
+          class="button column column-25 column-offset-50"
+        >
+          BACKWARD
+        </button>
+        <button
+          type="button"
+          id="bad-forward-1"
+          class="button column column-25"
+        >
+          FORWARD
+        </button>
+      </div>
+      <a href="https://www.vislies.org/2018/gallery/" target="_blank"
+        >Total Worldwide Emails per Day</a
+      >
 
       <h3>Best Redesign</h3>
       <div class="row">
@@ -190,47 +155,34 @@
           <img src="assets/mooyeong/Mooyeong-GoodViz.png" class="center" />
         </div>
         <div class="column">
-          <ul>
-            <li>
-              This visualization is for those interested in comparing stock
-              performance between growth index and value index for the last 20
-              years
-            </li>
-            <li>
-              This visualization demonstrates strong outperformance of growth
-              index over value index for the last 10 years.
-            </li>
-            <li>
-              The data being encoded in this visualization is the stock index
-              for each sector at given time of the year
-            </li>
-            <li>
-              The visualization encodes the data as a graph with its x-axis
-              representing the time (year) and y-axis representing the stock
-              index. There is also a horizontal heatmap below the graph
-              demonstrating the dominant index of that time by color
-            </li>
-            <li>
-              Here, the reader compares values and see the trends on the graph
-            </li>
-            <li>
-              This visualization is truthful as it shows the correct stock data
-              and the graph is scaled equally. It is functional as the readers
-              can easily identify the changes in time through both the graph and
-              heatmap. It is beautiful as its scale is near to 45%. It is
-              insightful and enlightening as it shows historical evidence to
-              support the author’s claim.
-            </li>
-            <li>
-              Considering all aspects, this visualization is good because it is
-              easy to understand with minimal data encoding. Both x-axis and
-              y-axis are uniformly scaled to prevent misleading perception. It
-              has great quantitative measures and a clear comparison that the
-              audience can see
-            </li>
-          </ul>
+          <li id="good-2">
+            This visualization is for those interested in comparing stock
+            performance between growth index and value index for the last 20
+            years
+          </li>
         </div>
       </div>
+      <div class="row">
+        <button
+          type="button"
+          id="good-backward-2"
+          class="button column column-25 column-offset-50"
+        >
+          BACKWARD
+        </button>
+        <button
+          type="button"
+          id="good-forward-2"
+          class="button column column-25"
+        >
+          FORWARD
+        </button>
+      </div>
+      <a
+        href="https://www.economist.com/graphic-detail/2020/09/19/the-age-old-strategy-of-buying-cheap-shares-is-faltering"
+        target="_blank"
+        >Russell 1000 American stock index</a
+      >
 
       <h3>Bad Visualization 2</h3>
       <div class="row">
@@ -238,43 +190,31 @@
           <img src="assets/mooyeong/Mooyeong-BadViz.jpg" />
         </div>
         <div class="column">
-          <li>
+          <li id="bad-2">
             This visualization is for those interested in COVID-19 spreads in
             seattle
           </li>
-          <li>
-            This visualization attempts to convey that the COVID-19 spreads in
-            seattle is flattening
-          </li>
-          <li>
-            The data being encoded in this visualization is the number of
-            positive COVID-19 cases in Seattle
-          </li>
-          <li>
-            The data is represented through a graph. The x-axis represents the
-            date and the y-axis represents the number of cases.
-          </li>
-          <li>
-            The reader is tasked with seeing COVID 19 cases trend in Seattle
-            from February to April
-          </li>
-          <li>
-            To a certain extent, this visualization is beautiful as the graph
-            can easily gain the audience's attention. However, the visualization
-            fails in other categories. The y axis of the graph is scaled
-            unevenly, creating misperception over COVID-19 cases. Uneven marks
-            in the x axis also makes the viewer hard to grasp the average change
-            over time. Lastly, the data is ambiguous as it could be either
-            cumulative or discrete.
-          </li>
-          <li>
-            Considering all aspects, this visualization is bad because it fails
-            to deliver a clear message to its viewers. The explanation over data
-            is unclear, and multiple design issues can delude confusion to its
-            viewers.
-          </li>
         </div>
       </div>
+      <div class="row">
+        <button
+          type="button"
+          id="bad-backward-2"
+          class="button column column-25 column-offset-50"
+        >
+          BACKWARD
+        </button>
+        <button
+          type="button"
+          id="bad-forward-2"
+          class="button column column-25"
+        >
+          FORWARD
+        </button>
+      </div>
+      <a href="https://viz.wtf/image/618566795056562176" target="_blank"
+        >Seattle Covid-19 spread</a
+      >
 
       <h3>Best Redesign</h3>
       <div class="row">
@@ -315,97 +255,66 @@
           <img src="assets/Sungjoon/good design.PNG" class="center" />
         </div>
         <div class="column">
-          <ul>
-            <li>
-              This visualization is for those interested in foreign-born
-              population in New England
-            </li>
-            <li>
-              This visualization is trying to show the increase in Non-US
-              residents throughout the decades and by different regions.
-            </li>
-            <li>
-              The data being encoded in this visualization is the foreign-born
-              population by region of birth and decade of immigration.
-            </li>
-            <li>
-              The data is encoded as a bar chart with its x-axis representing a
-              decade and y-axis representing population by thousands. Each
-              population from different regions is classified with distinct
-              colors.
-            </li>
-            <li>The reader’s task is to see the trends on the graph.</li>
-            <li>
-              This visualization is truthful as it uses the uniform scales and
-              labels. It is functional, beautiful and insightful as it helps the
-              reader to interpret visualization correctly and recognize the flow
-              throughout the years. The color coordinates also enable the reader
-              to identify the trend, where the predominant foreign-born
-              population in New England changed from Europe to Asia and Central
-              America. It is enlightening as it is informative and shows the
-              historical transitions.
-            </li>
-            <li>
-              Considering all aspects, this visualization is good because it is
-              easy to understand and visually detect the changes. It has great
-              quantitative measures and a clear comparison that the audience can
-              see. The use of colors are very effective and practical as well.
-            </li>
-          </ul>
+          <li id="good-3">
+            This visualization is for those interested in foreign-born
+            population in New England
+          </li>
         </div>
       </div>
-
-      <h3>Bad Visualization 2</h3>
+      <div class="row">
+        <button
+          type="button"
+          id="good-backward-3"
+          class="button column column-25 column-offset-50"
+        >
+          BACKWARD
+        </button>
+        <button
+          type="button"
+          id="good-forward-3"
+          class="button column column-25"
+        >
+          FORWARD
+        </button>
+      </div>
+      <a
+        href="https://www.ctdatahaven.org/blog/immigration-good-us-economy"
+        target="_blank"
+        >Foreign-born population by region and decade of immigration</a
+      >
+      <h3>Bad Visualization 3</h3>
       <div class="row">
         <div class="column">
           <img src="assets/Sungjoon/bad design.PNG" />
         </div>
         <div class="column">
-          <li>
+          <li id="bad-3">
             This visualization is for the audience who is interested in
             comparing the perception of Baby Boomers
           </li>
-          <li>
-            This visualization is trying to convey the differences between how
-            Baby Boomers describe themselves and how HR professionals perceive
-            Baby Boomers.
-          </li>
-          <li>
-            The data being encoded in this visualization is two sets of five
-            percentages indicating whether Boomers are perceived from two
-            different groups.
-          </li>
-          <li>
-            The data is represented in two modified pie charts of stick-figures.
-            Each color represents the percentages for five distinct traits.
-          </li>
-          <li>
-            The reader is tasked to compare values of two different views of
-            Baby Boomers.
-          </li>
-          <li>
-            To a certain extent, this visualization is beautiful as it grasps
-            the audience's attention with its design and color coordinations.
-            Also it can be enlightening as it can encourage Baby Boomers to
-            overcome the stereotypes or acknowledge how HR professionals
-            perceive them. However, the visualization fails in other categories.
-            The visualization is misleading since the percentages of the left
-            chart add up to 243% and the right 162%. The colored distributions
-            are not in proportion as well; looking at the colored proportions on
-            the right, it is hard to discern the size of people-savvy and
-            creative, which have 23% differences. Also, the leadership trait on
-            the left side covers the whole head at 40%, while the right side
-            covers only 2/3 of the head at 55%.
-          </li>
-          <li>
-            Considering all aspects, this visualization is bad because it can be
-            misleading to its audience as it misrepresents the data. Also the
-            comparison of the two charts causes a confusion to the audience as
-            it is not in uniform proportion.
-          </li>
         </div>
       </div>
-
+      <div class="row">
+        <button
+          type="button"
+          id="bad-backward-3"
+          class="button column column-25 column-offset-50"
+        >
+          BACKWARD
+        </button>
+        <button
+          type="button"
+          id="bad-forward-3"
+          class="button column column-25"
+        >
+          FORWARD
+        </button>
+      </div>
+      <a
+        href="https://www.nexxt.com/articles/infographic-shows-what-hr-pros-think-of-millennials-12625-article.html"
+        target="_blank"
+        >How Baby Boomers are perceived</a
+      >
       <h3>Best Redesign</h3>
       <div class="row">
         <div class="column">
@@ -416,12 +325,12 @@
             I chose a double bar chart as a design and encoded traits as a
             x-axis and the percentage as a y-axis. Also, specific percentages
             are labeled in each bar for clarification. Compared to the original
-            design, the double bar chart has correct proportions and scaling. 
-            The original chart had stick-figured design and color coordinations 
-            that could attract the audience. However, with correct proportions 
-            and scaling, the redesign provides accurate representation of percentages.  
-            Also, it is easier for the audience to compare the two different 
-            perceptions on each of the traits. 
+            design, the double bar chart has correct proportions and scaling.
+            The original chart had stick-figured design and color coordinations
+            that could attract the audience. However, with correct proportions
+            and scaling, the redesign provides accurate representation of
+            percentages. Also, it is easier for the audience to compare the two
+            different perceptions on each of the traits.
           </p>
         </div>
       </div>
