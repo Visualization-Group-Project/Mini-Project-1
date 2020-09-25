@@ -15,8 +15,11 @@ document.querySelector('#good-forward-3').onclick = function () {
   console.log('forward-3');
   goodIndex3++;
 
-  let pTag = document.querySelector('#good-3');
-  pTag.innerHTML = goodFacts3[goodIndex3];
+  let pTag = document.querySelector('#good-3-question');
+  pTag.innerHTML = questions[goodIndex3];
+
+  let liTag = document.querySelector('#good-3');
+  liTag.innerHTML = goodFacts3[goodIndex3];
 };
 
 document.querySelector('#good-backward-3').onclick = function () {
@@ -24,8 +27,11 @@ document.querySelector('#good-backward-3').onclick = function () {
   console.log('backward-3');
   goodIndex3--;
 
-  let pTag = document.querySelector('#good-3');
-  pTag.innerHTML = goodFacts3[goodIndex3];
+  let pTag = document.querySelector('#good-3-question');
+  pTag.innerHTML = questions[goodIndex3];
+
+  let liTag = document.querySelector('#good-3');
+  liTag.innerHTML = goodFacts3[goodIndex3];
 };
 
 let badFacts3 = [
@@ -45,8 +51,11 @@ document.querySelector('#bad-forward-3').onclick = function () {
   console.log('forward-3');
   badIndex3++;
 
-  let pTag = document.querySelector('#bad-3');
-  pTag.innerHTML = badFacts3[badIndex3];
+  let pTag = document.querySelector('#bad-3-question');
+  pTag.innerHTML = questions[badIndex3];
+
+  let liTag = document.querySelector('#bad-3');
+  liTag.innerHTML = badFacts3[badIndex3];
 };
 
 document.querySelector('#bad-backward-3').onclick = function () {
@@ -54,6 +63,9 @@ document.querySelector('#bad-backward-3').onclick = function () {
   console.log('backward-3');
   badIndex3--;
 
-  let pTag = document.querySelector('#bad-3');
-  pTag.innerHTML = badFacts3[badIndex3];
+  let pTag = document.querySelector('#bad-3-question');
+  pTag.innerHTML = questions[badIndex3];
+
+  let liTag = document.querySelector('#bad-3');
+  liTag.innerHTML = badFacts3[badIndex3];
 };

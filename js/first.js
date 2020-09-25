@@ -1,4 +1,14 @@
-let goodFacts = [
+let questions = [
+  'Who is the audience?',
+  'What message and questions does this visualization convey and answer?',
+  'What data is encoded in the visualization?',
+  'How does the visualiztion encode the data?',
+  'What tasks readers perform on the visualization (e.g., identify extremes, compare values, seeing trends) ?',
+  'How are the five principles (i.e., truthful, functional, beautiful, insightful, enlightening) applied to this visualization?',
+  'Considering all aspects, why is this visualization good or bad?',
+];
+
+let goodFacts1 = [
   'This visualization is for those interested in comparing the different disease deaths worldwide',
   'This visualization is trying to show the seriousness of the coronavirus outbreak',
   'The data being encoded in this visualization is the average disease deaths per day worldwide by different pandemics and endemics',
@@ -8,27 +18,32 @@ let goodFacts = [
   'Considering all aspects, this visualization is good because it is very approachable and easy to understand. It has great quantitative measures and a clear comparison that the audience can see and figure out what is important. The use of colors are very effective and practical as well.',
 ];
 
-let goodIndex = 0;
+let goodIndex1 = 0;
 
 document.querySelector('#good-forward-1').onclick = function () {
-  if (goodIndex >= goodFacts.length - 1) return;
-  console.log('forward-1');
-  goodIndex++;
+  if (goodIndex1 >= goodFacts1.length - 1) return;
 
-  let pTag = document.querySelector('#good-1');
-  pTag.innerHTML = goodFacts[goodIndex];
+  goodIndex1++;
+  let pTag = document.querySelector('#good-1-question');
+  pTag.innerHTML = questions[goodIndex1];
+
+  let liTag = document.querySelector('#good-1');
+  liTag.innerHTML = goodFacts1[goodIndex1];
 };
 
 document.querySelector('#good-backward-1').onclick = function () {
-  if (goodIndex <= 0) return;
+  if (goodIndex1 <= 0) return;
   console.log('backward-1');
-  goodIndex--;
+  goodIndex1--;
 
-  let pTag = document.querySelector('#good-1');
-  pTag.innerHTML = goodFacts[goodIndex];
+  let pTag = document.querySelector('#good-1-question');
+  pTag.innerHTML = questions[goodIndex1];
+
+  let liTag = document.querySelector('#good-1');
+  liTag.innerHTML = goodFacts1[goodIndex1];
 };
 
-let badFacts = [
+let badFacts1 = [
   'This visualization is for the readers of technical papers who are interested in the changing data on email usages',
   'This plot is trying to convey that email traffic is steeply on the rise',
   'The data being encoded in this visualization is the total worldwide emails being used per day, in billions, through 2017 to 2021',
@@ -38,22 +53,28 @@ let badFacts = [
   'Considering all aspects, this visualization is bad because it can be misleading to its audience. It not only has unnecessary design features, but also misrepresents the data. The bar chart shows a trend with some predictions of the future that could not necessarily be accurate information, and has incorrect scaling that makes the chart seem like email traffic has doubled when it only went by a small fraction in truth.',
 ];
 
-let badIndex = 0;
+let badIndex1 = 0;
 
 document.querySelector('#bad-forward-1').onclick = function () {
-  if (badIndex >= badFacts.length - 1) return;
+  if (badIndex1 >= badFacts1.length - 1) return;
   console.log('forward-1');
-  badIndex++;
+  badIndex1++;
 
-  let pTag = document.querySelector('#bad-1');
-  pTag.innerHTML = badFacts[badIndex];
+  let pTag = document.querySelector('#bad-1-question');
+  pTag.innerHTML = questions[badIndex1];
+
+  let liTag = document.querySelector('#bad-1');
+  liTag.innerHTML = badFacts1[badIndex1];
 };
 
 document.querySelector('#bad-backward-1').onclick = function () {
-  if (badIndex <= 0) return;
+  if (badIndex1 <= 0) return;
   console.log('backward-1');
-  badIndex--;
+  badIndex1--;
 
-  let pTag = document.querySelector('#bad-1');
-  pTag.innerHTML = badFacts[badIndex];
+  let pTag = document.querySelector('#bad-1-question');
+  pTag.innerHTML = questions[badIndex1];
+
+  let liTag = document.querySelector('#bad-1');
+  liTag.innerHTML = badFacts1[badIndex1];
 };
