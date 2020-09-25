@@ -18,16 +18,19 @@ body {
 .row {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
+  background-color: gray;
+
 }
 
 .column {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   flex-basis: 100%;
   flex: 1;
-  background-color: gray;
   margin: 1px;
   color: white;
-}
 
+}
