@@ -19,7 +19,6 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  /* border: 5px solid yellow; */
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -30,16 +29,10 @@ body {
   justify-content: center;
   align-items: center;
   color: black;
-  /* margin: 10px, 0; */
 }
 
 .button {
   font-size: 100%;
-}
-
-.content-container {
-  /* border: 1px solid blue; */
-  /* padding: 10px; */
 }
 
 .case-container {
@@ -62,8 +55,7 @@ body {
 
 img {
   border-radius: 4px;
-  max-width: 100%;
-  min-width: 420px;
+  width: 600px;
   height: 420px;
 }
 
@@ -81,6 +73,7 @@ span {
   background-size: 200% auto;
   color: #222;
   transition: background-position 0.5s ease-out;
+  vertical-align: middle;
 }
 
 span:hover {

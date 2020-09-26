@@ -12,7 +12,6 @@ let goodIndex3 = 0;
 
 document.querySelector('#good-forward-3').onclick = function () {
   if (goodIndex3 >= goodFacts3.length - 1) return;
-  console.log('forward-3');
   goodIndex3++;
 
   let pTag = document.querySelector('#good-3-question');
@@ -24,7 +23,6 @@ document.querySelector('#good-forward-3').onclick = function () {
 
 document.querySelector('#good-backward-3').onclick = function () {
   if (goodIndex3 <= 0) return;
-  console.log('backward-3');
   goodIndex3--;
 
   let pTag = document.querySelector('#good-3-question');
@@ -48,7 +46,6 @@ let badIndex3 = 0;
 
 document.querySelector('#bad-forward-3').onclick = function () {
   if (badIndex3 >= badFacts3.length - 1) return;
-  console.log('forward-3');
   badIndex3++;
 
   let pTag = document.querySelector('#bad-3-question');
@@ -60,7 +57,6 @@ document.querySelector('#bad-forward-3').onclick = function () {
 
 document.querySelector('#bad-backward-3').onclick = function () {
   if (badIndex3 <= 0) return;
-  console.log('backward-3');
   badIndex3--;
 
   let pTag = document.querySelector('#bad-3-question');

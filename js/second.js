@@ -12,7 +12,6 @@ let goodIndex2 = 0;
 
 document.querySelector('#good-forward-2').onclick = function () {
   if (goodIndex2 >= goodFacts2.length - 1) return;
-  console.log('forward-2');
   goodIndex2++;
   let pTag = document.querySelector('#good-2-question');
   pTag.innerHTML = questions[goodIndex2];
@@ -23,7 +22,6 @@ document.querySelector('#good-forward-2').onclick = function () {
 
 document.querySelector('#good-backward-2').onclick = function () {
   if (goodIndex2 <= 0) return;
-  console.log('backward-2');
   goodIndex2--;
   let pTag = document.querySelector('#good-2-question');
   pTag.innerHTML = questions[goodIndex2];
@@ -46,7 +44,6 @@ let badIndex2 = 0;
 
 document.querySelector('#bad-forward-2').onclick = function () {
   if (badIndex2 >= badFacts2.length - 1) return;
-  console.log('forward-2');
   badIndex2++;
 
   let pTag = document.querySelector('#bad-2-question');
@@ -58,7 +55,6 @@ document.querySelector('#bad-forward-2').onclick = function () {
 
 document.querySelector('#bad-backward-2').onclick = function () {
   if (badIndex2 <= 0) return;
-  console.log('backward-2');
   badIndex2--;
 
   let pTag = document.querySelector('#bad-2-question');
